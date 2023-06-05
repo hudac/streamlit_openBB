@@ -1,0 +1,3 @@
+streamlit==1.23.*
+streamlit-aggrid
+openbb[all]==3.0.1

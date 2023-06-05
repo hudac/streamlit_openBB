@@ -1,0 +1,10 @@
+version: v1
+
+components:
+- name: streamlit
+  docker:
+    file: Dockerfile
+  ports:
+  - 8080
+  ingresses:
+  - host: app
