@@ -5,7 +5,7 @@ import pandas as pd
 from st_aggrid import AgGrid, GridOptionsBuilder
 from pages.Stocks import get_candlestick_plot
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 data = openbb.stocks.gov.lasttrades()
 

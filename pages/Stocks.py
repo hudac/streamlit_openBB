@@ -96,7 +96,7 @@ def get_candlestick_plot(
     return fig
     
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 
 homeTab, discoveryTab = st.tabs(["Home", "Discovery"])
@@ -128,12 +128,12 @@ with homeTab:
             col1, col2 = st.columns(2)
 
             with col1:
-                st.subheader('openbb.stocks.dd.supplier')
-                st.dataframe(openbb.stocks.dd.supplier(ticker))
+                st.subheader('openbb.stocks.fa.supplier')
+                st.dataframe(openbb.stocks.fa.supplier(ticker))
 
             with col2:
-                st.subheader('openbb.stocks.dd.customer')
-                st.dataframe(openbb.stocks.dd.customer(ticker))
+                st.subheader('openbb.stocks.fa.customer')
+                st.dataframe(openbb.stocks.fa.customer(ticker))
             
             pd.set_option('display.max_columns', None)
             st.subheader('openbb.stocks.options.info')

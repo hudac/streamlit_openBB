@@ -3,7 +3,7 @@ from openbb_terminal.sdk import openbb
 import pandas as pd
 
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 st.title('openbb.etf')
 
 
@@ -17,8 +17,9 @@ st.dataframe(data)
 symbol = st.text_input('ETF Symbol')
 
 if symbol:
-    st.subheader('openbb.etf.summary')
-    st.write(openbb.etf.summary(symbol))
+    if hasattr(openbb.etf, 'summary'):
+        st.subheader('openbb.etf.summary')
+        st.write(openbb.etf.summary(symbol))
 
     c1, c2 = st.columns((2, 3))
     with c1:

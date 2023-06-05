@@ -9,7 +9,7 @@ def color_negative_red(val):
         return f'color: {color}'
 
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 st.title('openbb.economy')
 
 col1, col2 = st.columns(2)

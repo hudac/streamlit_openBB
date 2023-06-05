@@ -6,7 +6,7 @@ from io import StringIO
 from pages.Stocks import get_candlestick_plot
 from st_aggrid import AgGrid
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 ma1=10
 ma2=30
